@@ -13,7 +13,7 @@ public class MainController {
     @Autowired
     private UserRepository userRepository;
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String loginPage(Model model) {
         User user = new User();
         model.addAttribute("user", user);
